@@ -17,7 +17,7 @@ class RbacController extends Controller
     {
         $auth = Yii::$app->authManager;
 
-/*        // добавляем разрешение "createPost"
+        // добавляем разрешение "createPost"
         $createPost = $auth->createPermission('createPost');
         $createPost->description = 'Create a post';
         $auth->add($createPost);
@@ -45,7 +45,7 @@ class RbacController extends Controller
         $auth->addChild($admin, $deletePost);
         $auth->addChild($admin, $author);
 
-        $auth->assign($admin, 1);*/
+        $auth->assign($admin, 1);
 
 
 

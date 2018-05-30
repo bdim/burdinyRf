@@ -213,9 +213,8 @@ class SiteController extends Controller
     }
 
     public function actionTest(){
-        VarDumper::dump(\Yii::$app->user->can('test')) ;
+        VarDumper::dump(\Yii::$app->user->can('createPost')) ;
 
-        Controller::beforeAction();
-
+        //Controller::beforeAction();
     }
 }
